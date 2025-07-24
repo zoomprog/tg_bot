@@ -87,6 +87,20 @@ async def handle_buttons(callback: types.CallbackQuery, state: FSMContext):
             reply_markup=get_subcategory_button_keyboard()
         )
         return
+    
+    elif action == "nesting_second":
+        await callback.message.edit_text(
+            'Просто проверка, ничего важного',
+            reply_markup=get_menu_button_keyboard()
+        )
+        return
+    
+    elif action == "nesting_third":
+        await callback.message.edit_text(
+            'Ожидайте... 😊',
+        )
+        return
+    
 
     elif action == "sub_sub_category":
         await callback.message.edit_text(
