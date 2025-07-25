@@ -44,7 +44,7 @@ def get_nesting_check_keyboard() -> InlineKeyboardMarkup:
 def get_menu_button_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[
-            [InlineKeyboardButton(text="Меню", callback_data="main_menu")]
+            [InlineKeyboardButton(text="В Меню ↩️", callback_data="main_menu")]
         ]
     )
 
@@ -54,7 +54,7 @@ def get_subcategory_button_keyboard() -> InlineKeyboardMarkup:
             [InlineKeyboardButton(text="ПодПодКатегория", callback_data="sub_sub_category")],
             [InlineKeyboardButton(text="2 ПодПодКатегория", callback_data="2_sub_sub_category")],
             [InlineKeyboardButton(text="Назад", callback_data="back_to_nesting")],
-            [InlineKeyboardButton(text="Меню", callback_data="main_menu")]
+            [InlineKeyboardButton(text="В Меню ↩️", callback_data="main_menu")]
         ]
     )
 
@@ -63,6 +63,6 @@ def get_sub_sib_category_button_keyboard() -> InlineKeyboardMarkup:
         inline_keyboard=[
             [InlineKeyboardButton(text="Еще вложеннее", callback_data="even_more_invested")],
             [InlineKeyboardButton(text="Назад", callback_data="back_to_subcategory")],
-            [InlineKeyboardButton(text="Меню", callback_data="main_menu")]
+            [InlineKeyboardButton(text="В Меню ↩️", callback_data="main_menu")]
         ]
     )

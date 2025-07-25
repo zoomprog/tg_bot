@@ -46,7 +46,7 @@ ONE_C_BUTTONS = [
     [("Создание контрагента", "1c_create_contractor")],
     [("Создание номенклатуры", "1c_create_nomenclature")],
     [("<< Назад", "back_to_main")],
-    [("Меню ↩️", "main_menu")]
+    [("В Меню ↩️", "main_menu")]
 ]
 
 RECLAMATIONS_BUTTONS = [
@@ -56,7 +56,7 @@ RECLAMATIONS_BUTTONS = [
     [("Регион50(Проект 2015)", "reclamation_region50")],
     [("Русский проект(Метроном)", "reclamation_metronom")],
     [("<< Назад", "back_to_main")],
-    [("Меню ↩️", "main_menu")]
+    [("В Меню ↩️", "main_menu")]
 ]
 
 KB_BUTTONS = [
@@ -64,22 +64,22 @@ KB_BUTTONS = [
     [("Сиропы, топинги, пюре", "kb_syrups_toppings")],
     [("Оборудование", "kb_equipment")],
     [("<< Назад", "back_to_main")],
-    [("Меню ↩️", "main_menu")]
+    [("В Меню ↩️", "main_menu")]
 ]
 
 EQUIPMENT_SERVICING_BUTTONS = [
     [("<< Назад", "back_to_main")],
-    [("Меню ↩️", "main_menu")]
+    [("В Меню ↩️", "main_menu")]
 ]
 
 ABOUT_COMPANY_BUTTONS = [
     [("<< Назад", "back_to_main")],
-    [("Меню ↩️", "main_menu")]
+    [("В Меню ↩️", "main_menu")]
 ]
 
 TECH_SUPPORT_BUTTONS = [
     [("<< Назад", "back_to_main")],
-    [("Меню ↩️", "main_menu")]
+    [("В Меню ↩️", "main_menu")]
 ]
 
 NESTING_CHECK_BUTTONS = [
@@ -87,7 +87,7 @@ NESTING_CHECK_BUTTONS = [
     [("Второй", "nesting_second")],
     [("Третий", "nesting_third")],
     [("<< Назад", "back_to_main")],
-    [("Меню ↩️", "main_menu")]
+    [("В Меню ↩️", "main_menu")]
 ]
 
 TEXT_reclamation_klon = """

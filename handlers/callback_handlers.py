@@ -13,6 +13,7 @@ from data.data import (
     ACTION_NAMES, TEXT_reclamation_klon, TEXT_reclamation_masterglass,
     TEXT_reclamation_region50, TEXT_reclamation_metronom
 )
+from aiogram.exceptions import TelegramBadRequest
 
 async def handle_buttons(callback: types.CallbackQuery, state: FSMContext):
     action = callback.data
@@ -89,16 +90,28 @@ async def handle_buttons(callback: types.CallbackQuery, state: FSMContext):
         return
     
     elif action == "nesting_second":
-        await callback.message.edit_text(
-            'Просто проверка, ничего важного',
-            reply_markup=get_menu_button_keyboard()
-        )
+        try:
+            await callback.message.edit_text(
+                'Просто проверка, ничего важного',
+                reply_markup=get_menu_button_keyboard()
+            )
+        except TelegramBadRequest as e:
+            if "message is not modified" in str(e):
+                await callback.message.answer('Просто проверка, ничего важного', reply_markup=get_menu_button_keyboard())
+            else:
+                raise
         return
     
     elif action == "nesting_third":
-        await callback.message.edit_text(
-            'Ожидайте... 😊',
-        )
+        try:
+            await callback.message.edit_text(
+                'Ожидайте... 😊',
+            )
+        except TelegramBadRequest as e:
+            if "message is not modified" in str(e):
+                await callback.message.answer('Ожидайте... 😊')
+            else:
+                raise
         return
     
 
